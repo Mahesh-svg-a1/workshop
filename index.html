@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2 workshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">PORTFOLIO</div>
+    <nav class="nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">skill</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </header>
+
+  <main>
+
+    <section id="home" class="video-section">
+     <video autoplay loop muted id="video-background">
+<!-- Use a small, low-res video file for demonstration/performance -->
+<source src="video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+      <div class="video-overlay">
+        <h1>Week 2</h1>
+        <p>HTML5 Video • Audio • Canvas • Responsive Grid</p>
+      </div>
+      <button id="toggle-video" aria-label="Toggle video">Pause Video</button>
+    </section>
+
+    <section id="about" class="section audio-section">
+      <h2>Audio Player</h2>
+      <audio id="sample-audio" preload="metadata">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      </audio>
+      <button id="toggle-audio">Play Audio</button>
+    </section>
+
+    <section id="work" class="section canvas-section">
+      <h2>Drawing Canvas</h2>
+      <div class="color-picker" role="group" aria-label="Choose color">
+        <button data-color="#000000" style="background:#000000" aria-label="Black"></button>
+        <button data-color="#e74c3c" style="background:#e74c3c" aria-label="Red"></button>
+        <button data-color="#3498db" style="background:#3498db" aria-label="Blue"></button>
+        <button data-color="#2ecc71" style="background:#2ecc71" aria-label="Green"></button>
+        <button data-color="#f1c40f" style="background:#f1c40f" aria-label="Yellow"></button>
+        <button data-color="#9b59b6" style="background:#9b59b6" aria-label="Purple"></button>
+      </div>
+      <canvas id="drawing-canvas" width="800" height="450"></canvas>
+      <button id="clear-canvas">Clear Canvas</button>
+    </section>
+
+    <section id="contact" class="section grid-section">
+      <h2>Responsive Grid</h2>
+      <div class="grid-container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+        <div class="card">Card 6</div>
+      </div>
+      <button id="add-card">Add New Card</button>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    © 2025 Practice – Built with HTML5, CSS3 & JavaScript
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
